@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Dikshant Meshram</title>
+<meta name="description" content="Get in touch with Dikshant Meshram about full-time software engineering roles.">
+<meta property="og:title" content="Contact — Dikshant Meshram">
+<meta property="og:description" content="Get in touch with Dikshant Meshram about full-time software engineering roles.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/headshot.jpg">
+<meta name="theme-color" content="#F4F3EF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="/contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Dikshant Meshram — home"><span class="full">Dikshant Meshram</span><span class="short">DM</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn" data-resume href="contact.html?topic=resume">Resume <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="M6 11l6 6 6-6"/><path d="M5 20h14"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <span class="label">Contact</span>
+    <h1 class="display">Say hello<span class="soft">.</span></h1>
+    <p class="lead">Hiring for a software engineering role, or want to collaborate? Send a note — I usually reply within a day or two.</p>
+  </div>
+</section>
+<section style="padding-bottom:clamp(64px,9vw,128px)">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="info-block"><span class="label">Email</span><br><a href="mailto:dikshant12225@gmail.com">dikshant12225@gmail.com</a><br><a href="mailto:dmeshram@asu.edu">dmeshram@asu.edu</a></div>
+      <div class="info-block"><span class="label">LinkedIn</span><br><a href="https://www.linkedin.com/in/dikshant-meshram-80a625193" target="_blank" rel="noopener">dikshant-meshram ↗</a></div>
+      <div class="info-block"><span class="label">Location</span><p>Tempe, Arizona</p><p style="color:var(--muted);font-size:16px;font-weight:400">Open to relocation &amp; remote</p></div>
+    </div>
+    <form class="form" id="contact-form" novalidate>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row">
+        <label class="field"><span class="label">Name *</span><input name="name" required maxlength="120" placeholder="Jane Doe" autocomplete="name"></label>
+        <label class="field"><span class="label">Email *</span><input name="email" type="email" required maxlength="200" placeholder="jane@company.com" autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span class="label">Company</span><input name="company" maxlength="120" placeholder="Company" autocomplete="organization"></label>
+        <label class="field"><span class="label">Reaching out about</span>
+          <select name="topic">
+            <option>Full-time role</option>
+            <option>Internship</option>
+            <option>Contract / freelance</option>
+            <option>Resume request</option>
+            <option>Just saying hi</option>
+          </select>
+        </label>
+      </div>
+      <label class="field"><span class="label">Message *</span><textarea name="message" required rows="5" maxlength="5000" placeholder="Tell me about the role or project…"></textarea></label>
+      <div class="form-actions">
+        <button class="btn lg" type="submit">Send message →</button>
+        <span class="form-error" role="alert" hidden>Couldn't send — please check your connection and try again.</span>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span class="label">© <span data-year>2026</span> Dikshant Meshram</span>
+    <span class="label">Tempe, Arizona · Built by hand</span>
+  </div>
+</footer>
+</body>
+</html>

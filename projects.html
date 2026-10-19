@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects — Dikshant Meshram</title>
+<meta name="description" content="14 projects across web, cloud and applied AI by software engineer Dikshant Meshram.">
+<meta property="og:title" content="Projects — Dikshant Meshram">
+<meta property="og:description" content="14 projects across web, cloud and applied AI by software engineer Dikshant Meshram.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/headshot.jpg">
+<meta name="theme-color" content="#F4F3EF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="/projects">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Dikshant Meshram — home"><span class="full">Dikshant Meshram</span><span class="short">DM</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" data-resume href="contact.html?topic=resume">Resume <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="M6 11l6 6 6-6"/><path d="M5 20h14"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <span class="label">Projects · 14</span>
+    <h1 class="display">Projects<span class="soft">.</span></h1>
+    <p class="lead">Research platforms, AI systems, cloud infrastructure and hackathon builds — newest first.</p>
+  </div>
+</section>
+<section style="padding-bottom:0">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+      <button class="filter" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+      <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter" type="button" data-filter="backend" aria-pressed="false">Back-end &amp; systems</button>
+      <button class="filter" type="button" data-filter="research" aria-pressed="false">Research</button>
+    </div>
+    <ol class="projects">
+<li class="proj reveal" data-tags="web research">
+  <span class="num">P01</span>
+  <div><h2>Elder Abuse Atlas</h2><div class="kind">Research &amp; diagnostic platform</div><span class="badge">Current</span></div>
+  <div class="desc"><p>NIJ-funded skeletal atlas and diagnostic tool that helps distinguish abuse-related trauma from accidental ground-level falls in older adults.</p><ul class="points"><li>Vue 3/TypeScript + Spring Boot platform with GraphQL, REST and MongoDB</li><li>Integrated an R/Plumber + JAGS service for posterior-probability diagnosis visualizations</li><li>Proposed a plugin architecture so diagnosis algorithms can be swapped without touching core services</li></ul></div>
+  <span class="year">2026–now</span>
+</li>
+<li class="proj reveal" data-tags="ai web">
+  <span class="num">P02</span>
+  <div><h2>Clinavis</h2><div class="kind">AI clinical summarization</div><span class="badge">Team lead</span></div>
+  <div class="desc"><p>Full-stack clinical platform with admin, doctor, nurse and patient dashboards. Led a 4-person team.</p><ul class="points"><li>SOAP-aware chunking, MiniLM embeddings and patient-scoped pgvector retrieval</li><li>Role-aware reranking: +19.4% Precision@5, +18.0% Recall@5</li><li>+20.6% BERTScore F1 over direct LLM generation; Groq, Anthropic and OpenAI behind one provider interface</li></ul></div>
+  <span class="year">2026</span>
+</li>
+<li class="proj reveal" data-tags="ai web">
+  <span class="num">P03</span>
+  <div><h2>DispatchIQ</h2><div class="kind">Fleet operations &amp; AI dispatch</div><span class="badge">Hackathon</span></div>
+  <div class="desc"><p>Fleet monitoring, driver ranking, conversational assistance and voice briefings for dispatchers.</p><ul class="points"><li>Rule-based driver scoring validated across 11 controlled scenarios</li><li>LangChain + Groq assistant with explainable recommendations</li><li>ElevenLabs voice briefings; React + two Flask services</li></ul></div>
+  <span class="year">2026</span>
+</li>
+<li class="proj reveal" data-tags="ai web">
+  <span class="num">P04</span>
+  <div><h2>Coverage IQ</h2><div class="kind">Prescription coverage analysis</div><span class="badge">Hackathon</span></div>
+  <div class="desc"><p>Analyzes payer policies, compares restrictions and drafts evidence-backed appeals.</p><ul class="points"><li>PDF extraction into a 13-field schema with version tracking</li><li>RAG over pgvector with source-chunk citations</li><li>Gemini, Groq and Cerebras orchestration with automatic fallback</li></ul></div>
+  <span class="year">2026</span>
+</li>
+<li class="proj reveal" data-tags="backend">
+  <span class="num">P05</span>
+  <div><h2>Software Quality Metrics Platform</h2><div class="kind">Static analysis &amp; integration</div></div>
+  <div class="desc"><p>Fan-In/Fan-Out and coupling analysis for Java codebases, merged with defect analysis into one platform.</p><ul class="points"><li>JavaParser dependency graphs and Javalin REST APIs</li><li>Concurrent orchestration across 3 analysis services</li><li>Grafana dashboards, Prometheus + Micrometer observability, Jenkins CI</li></ul></div>
+  <span class="year">2026</span>
+</li>
+<li class="proj reveal" data-tags="cloud ai">
+  <span class="num">P06</span>
+  <div><h2>AWS Elastic Face Recognition</h2><div class="kind">Cloud ML inference</div></div>
+  <div class="desc"><p>Multi-tier face recognition service on AWS that scales with demand.</p><ul class="points"><li>Custom autoscaling from 0 to 15 EC2 workers based on SQS queue depth</li><li>S3 persistence and asynchronous request/response messaging</li><li>Load-tested for correctness, concurrency and latency</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="cloud ai">
+  <span class="num">P07</span>
+  <div><h2>Serverless &amp; Edge Face Recognition</h2><div class="kind">AWS Lambda + IoT</div></div>
+  <div class="desc"><p>Event-driven video-frame recognition pipeline extended to the edge.</p><ul class="points"><li>Lambda detection/recognition stages triggered through SQS</li><li>Containerized inference on ECR with OpenCV and facenet-pytorch</li><li>IoT Greengrass + MQTT edge module with MTCNN detection</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="web backend">
+  <span class="num">P08</span>
+  <div><h2>GreenLoop</h2><div class="kind">Gamified carbon-savings tracker</div></div>
+  <div class="desc"><p>Rewards low-carbon choices with streaks, points, badges and leaderboards.</p><ul class="points"><li>React PWA with offline support and background sync</li><li>Spring Boot + MySQL with JWT auth and role-based permissions</li><li>Carbon engine with daily/weekly rollups and cached aggregates</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="backend">
+  <span class="num">P09</span>
+  <div><h2>FoodLang</h2><div class="kind">Domain-specific language</div></div>
+  <div class="desc"><p>A custom programming language for food operations.</p><ul class="points"><li>Tokenizer, parser and interpreter</li><li>Loops, ternaries, arithmetic and exception handling</li><li>Documented grammar and execution flow</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="web">
+  <span class="num">P10</span>
+  <div><h2>Desert Sprout</h2><div class="kind">Gamified learning platform</div><span class="badge">Hackathon</span></div>
+  <div class="desc"><p>Students level up as they master concepts.</p><ul class="points"><li>React interface with Firebase auth, database and hosting</li><li>Presented to judges with an engagement-focused demo</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="backend">
+  <span class="num">P11</span>
+  <div><h2>Scrum Simulator</h2><div class="kind">Agile workflow tool</div></div>
+  <div class="desc"><p>Sprint planning and backlog management with role-based actions.</p><ul class="points"><li>PO, Scrum Master and Dev roles with automated progress tracking</li><li>Led the first sprint as Scrum Master in a team of five</li></ul></div>
+  <span class="year">2025</span>
+</li>
+<li class="proj reveal" data-tags="web">
+  <span class="num">P12</span>
+  <div><h2>FinSecure</h2><div class="kind">Banking dashboard</div></div>
+  <div class="desc"><p>Secure banking web app with SSR authentication and role-based access.</p><ul class="points"><li>Real-time transaction history with pagination and filters for 1K+ users</li><li>Query and caching optimizations cut page-load time by 40%</li></ul></div>
+  <span class="year">2024</span>
+</li>
+<li class="proj reveal" data-tags="ai">
+  <span class="num">P13</span>
+  <div><h2>Handwritten Text Recognition</h2><div class="kind">CNN &amp; image processing</div><span class="badge">IEEE</span></div>
+  <div class="desc"><p>Convolutional network for handwritten digit recognition.</p><ul class="points"><li>TensorFlow/Keras CNN with thresholding, normalization and segmentation</li><li>Published in IEEE Xplore (GCAT 2022)</li></ul></div>
+  <span class="year">2022</span>
+</li>
+<li class="proj reveal" data-tags="web">
+  <span class="num">P14</span>
+  <div><h2>Dastavej</h2><div class="kind">Secure digital locker</div></div>
+  <div class="desc"><p>Confidential document storage with automated expiry alerts.</p><ul class="points"><li>HTML5, CSS, JavaScript, PHP and MySQL</li><li>Fast upload and search for everyday document management</li></ul></div>
+  <span class="year">2020</span>
+</li>
+    </ol>
+    <div class="cta-band">
+      <div><h2 class="h2">Hiring?</h2><p>I'm open to full-time software engineering roles — on-site, hybrid or remote.</p></div>
+      <div class="actions">
+        <a class="btn light lg" data-resume href="contact.html?topic=resume">Download resume <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="M6 11l6 6 6-6"/><path d="M5 20h14"/></svg></a>
+        <a class="btn lg" style="border-color:#3A3A3A" href="contact.html">Get in touch →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span class="label">© <span data-year>2026</span> Dikshant Meshram</span>
+    <span class="label">Tempe, Arizona · Built by hand</span>
+  </div>
+</footer>
+</body>
+</html>
