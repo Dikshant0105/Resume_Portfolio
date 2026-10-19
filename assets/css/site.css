@@ -168,6 +168,8 @@ a { color: inherit; }
 /* ---------- Footer ---------- */
 .footer { padding: 28px 0 40px; border-top: 1px solid var(--line); }
 .footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.footer-links a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.footer-links a:hover { border-bottom-color: var(--ink); }
 
 /* ---------- Page header ---------- */
 .page-head { padding: clamp(48px, 8vw, 112px) 0 clamp(40px, 6vw, 72px); }

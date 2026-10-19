@@ -11,7 +11,8 @@
     // Upload your resume PDF to this path in the repo. Until it exists, Resume buttons go to the contact page.
     resumeUrl: "assets/Dikshant-Meshram-Resume.pdf",
     email: "dikshant12225@gmail.com",
-    linkedin: "https://www.linkedin.com/in/dikshant-meshram-80a625193"
+    linkedin: "https://www.linkedin.com/in/dikshant-meshram-80a625193",
+    github: "https://github.com/dmeshram"
   };
 
   /* ---------------- helpers ---------------- */
@@ -263,8 +264,12 @@
       text: "Off the clock he's usually hiking, at a hackathon, catching a baseball game, gaming, or photographing sunsets and the sky.",
       links: [{ label: "See his photos", href: "about.html#off-the-clock" }] } },
     { keys: ["contact", "reach", "email", "mail", "message", "talk", "connect", "linkedin", "call", "touch"], a: {
-      text: "You can email him at dikshant12225@gmail.com (or dmeshram@asu.edu), connect on LinkedIn, or use the contact form — he usually replies within a day or two.",
-      links: [{ label: "Contact form", href: "contact.html" }, { label: "LinkedIn", href: "https://www.linkedin.com/in/dikshant-meshram-80a625193" }] } },
+      text: "You can email him at dikshant12225@gmail.com (or dmeshram@asu.edu), connect on LinkedIn, see his code on GitHub, or use the contact form — he usually replies within a day or two.",
+      links: [{ label: "Contact form", href: "contact.html" }, { label: "LinkedIn", href: "https://www.linkedin.com/in/dikshant-meshram-80a625193" }, { label: "GitHub", href: "https://github.com/dmeshram" }] } },
+    { keys: ["github", "git", "code", "repo", "repos", "repository", "repositories", "source", "open-source", "opensource"], w: 3, a: {
+      text: "You can browse Dikshant's code and repositories on GitHub at github.com/dmeshram.",
+      links: [{ label: "GitHub profile", href: "https://github.com/dmeshram" }, { label: "All projects", href: "projects.html" }],
+      follow: ["Show me his projects", "What are his skills?"] } },
     { keys: ["resume", "cv", "pdf", "download"], a: {
       text: "You can get his resume from the black \"Resume\" button in the top-right of any page.",
       follow: ["How do I contact him?"] } },
