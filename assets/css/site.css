@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
 }
 img { display: block; max-width: 100%; }
+[hidden] { display: none !important; }
 a { color: inherit; }
 ::selection { background: var(--ink); color: var(--paper); }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
@@ -190,7 +191,9 @@ a { color: inherit; }
 .proj .badge { display: inline-block; margin-top: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 100px; background: var(--ink); color: var(--paper); }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
 .filter { font: 500 14px/1 var(--sans); padding: 9px 15px; border-radius: 100px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+.filter:hover { background: rgba(10,10,10,.06); }
 .filter[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.filter-count { margin: -12px 0 20px; }
 .cta-band { background: var(--ink); color: var(--paper); border-radius: 6px; padding: clamp(36px, 6vw, 72px); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 28px; margin: clamp(56px, 8vw, 96px) 0; }
 .cta-band .h2 { color: var(--paper); }
 .cta-band p { color: var(--muted-dark); margin: 14px 0 0; max-width: 520px; }

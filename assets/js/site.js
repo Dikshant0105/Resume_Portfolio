@@ -129,10 +129,14 @@
       if (!btn) return;
       bar.querySelectorAll(".filter").forEach(function (f) { f.setAttribute("aria-pressed", String(f === btn)); });
       var tag = btn.getAttribute("data-filter");
+      var shown = 0;
       rows.forEach(function (r) {
         var tags = (r.getAttribute("data-tags") || "").split(" ");
         r.hidden = !(tag === "all" || tags.indexOf(tag) !== -1);
+        if (!r.hidden) { shown++; r.classList.add("in"); }
       });
+      var count = document.querySelector(".filter-count");
+      if (count) count.textContent = "Showing " + shown + " of " + rows.length + " projects";
     });
   }
 
