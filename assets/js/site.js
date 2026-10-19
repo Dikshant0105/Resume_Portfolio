@@ -86,10 +86,13 @@
   }
   function reveal() {
     var els = document.querySelectorAll(".reveal");
-    if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
+    var showAll = function () { els.forEach(function (e) { e.classList.add("in"); }); };
+    if (!("IntersectionObserver" in window)) { showAll(); return; }
+    document.documentElement.classList.add("js");
+    setTimeout(showAll, 2500); // safety net: never leave content hidden
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px" });
+    }, { rootMargin: "0px 0px -5% 0px", threshold: 0 });
     els.forEach(function (e) { io.observe(e); });
   }
 
